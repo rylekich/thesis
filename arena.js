@@ -5,7 +5,7 @@ const bucket = document.querySelector('#arena')
 const arenaUrl = "https://www.are.na/kyle-richardson/" + channel 
 
 
-fetch('https://api.are.na/v2/channels/' + channel + '/contents?sort=position&direction=desc&page=1&amp;per=10')
+fetch('https://api.are.na/v2/channels/' + channel + '/contents?sort=position&direction=desc&page=1&amp;per=25')
     .then(response => response.json())
     .then(data => {
         
